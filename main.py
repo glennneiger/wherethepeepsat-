@@ -11,14 +11,14 @@ import cv2
 fps = 30
 switch_thresh = 4
 prob = 40
-filename = '/home/tcfkaj/test1.avi'
+filename = '../test1.avi'
 frame_skip = 3
 
 rate = 1/fps
 
 detector = ObjectDetection()
 detector.setModelTypeAsYOLOv3()
-detector.setModelPath('yolo.h5')
+detector.setModelPath('../yolo.h5')
 detector.loadModel()
 
 cap = cv2.VideoCapture(filename)
